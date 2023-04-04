@@ -19,7 +19,6 @@ do
 
 
   ( ping -c 1 www.google.com ) >> "$STAT_DIR/$(date +%F)".txt;
-  # ( curl https://sharedapi.tasa.com.my/health ) >> "$STAT_DIR/$(date +%F)".txt;
   # ( echo; ) >> "$STAT_DIR/$(date +%F)".txt;
 
   if ping -c 1 www.google.com &> /dev/null
